@@ -1,4 +1,8 @@
 class TweetsController < ApplicationController
+  include ActionController::Caching::Pages
+  self.page_cache_directory = :domain_cache_directory
+  caches_page :year, :data
+
   def year
     @clinton_tweets = Tweet.tweets_that_include(['hillary', 'clinton', 'crooked'])
     @obama_tweets = Tweet.tweets_that_include(['barack', 'obama'], ['obamacare'])
@@ -24,5 +28,11 @@ class TweetsController < ApplicationController
       format.json {render json: @results}
     end
   end
+
+
+  private
+    def domain_cache_directory
+      Rails.root.join("public", request.domain)
+    end
 
 end
