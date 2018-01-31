@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
 
   // load the data
   d3.json("data.json", function(error, data) {
+    debugger
 
       data.forEach(function(d) {
           d.Date = d.Date;
