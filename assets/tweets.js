@@ -1,5 +1,8 @@
-document.addEventListener("turbolinks:load", function() {
-
+document.addEventListener("DOMContentLoaded", function() {
+  $('#clinton-tweets').hide()
+  $('#obama-tweets').hide()
+  $('#trump-tweets').hide()
+  
   console.log("Loading particles.js");
 
   particlesJS("particles-js", {
