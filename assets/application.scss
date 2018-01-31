@@ -1,15 +1,13 @@
-@import 'stylesheets/bootstrap-sprockets';
-@import 'stylesheets/bootstrap';
-@import 'stylesheets/tweets';
-@import 'stylesheets/font-awesome';
-@import 'stylesheets/flaticon/flaticon';
-@import 'stylesheets/rs-plugin/css/settings';
-@import 'stylesheets/rs-plugin/css/layers.scss';
-@import 'stylesheets/mfp/css/magnific-popup.min.scss';
-@import 'stylesheets/progresstracker/css/jquery.progresstracker.min.scss';
-@import 'stylesheets/offcanvas-menu/css/normalize.min.scss';
-@import 'stylesheets/wow/animate';
-@import 'stylesheets/style.scss';
+@import "tweets";
+@import 'font-awesome';
+@import 'flaticon/flaticon';
+@import 'rs-plugin/css/settings';
+@import 'rs-plugin/css/layers.scss';
+@import 'mfp/css/magnific-popup.min.scss';
+@import 'progresstracker/css/jquery.progresstracker.min.scss';
+@import 'offcanvas-menu/css/normalize.min.scss';
+@import 'wow/animate';
+@import 'style.scss';
 
 
 body {

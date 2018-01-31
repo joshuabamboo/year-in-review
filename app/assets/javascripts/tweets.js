@@ -1,4 +1,10 @@
 document.addEventListener("turbolinks:load", function() {
+  $('#clinton-tweets').hide()
+  $('#obama-tweets').hide()
+  $('#trump-tweets').hide()
+})
+
+document.addEventListener("turbolinks:load", function() {
 
   console.log("Loading particles.js");
 
