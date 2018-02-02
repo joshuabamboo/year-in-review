@@ -1,10 +1,8 @@
-window.addEventListener("load", function() {
+document.addEventListener("DOMContentLoaded", function() {
   $('#clinton-tweets').hide()
   $('#obama-tweets').hide()
   $('#trump-tweets').hide()
-})
 
-window.addEventListener("load", function() {
 
   console.log("Loading particles.js");
 
